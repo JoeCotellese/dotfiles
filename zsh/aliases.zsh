@@ -16,4 +16,3 @@ if [[ $HOST == "Joes-Mac-mini-2.local" ]]
   fi
 
 alias download="cd $HOME/Downloads"
-alias test="cd"
