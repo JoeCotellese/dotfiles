@@ -13,6 +13,8 @@ git_branch() {
   echo $($git symbolic-ref HEAD 2>/dev/null | awk -F/ {'print $NF'})
 }
 
+# display the name of the branch. 
+# if it's dirty, change the color to red
 git_dirty() {
   if $(! $git status -s &> /dev/null)
   then
@@ -71,6 +73,8 @@ set_prompt () {
   export RPROMPT="%{$fg_bold[cyan]%}%{$reset_color%}"
 }
 
+# You can use precmd to setup the prompt
+# Source: https://github.com/rothgar/mastering-zsh/blob/master/docs/config/hooks.md
 precmd() {
   title "zsh" "%m" "%55<...<%~"
   set_prompt
