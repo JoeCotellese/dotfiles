@@ -73,9 +73,14 @@ set_prompt () {
   export RPROMPT="%{$fg_bold[cyan]%}%{$reset_color%}"
 }
 
+DISABLE_AUTO_TITLE="true"
+
 # You can use precmd to setup the prompt
 # Source: https://github.com/rothgar/mastering-zsh/blob/master/docs/config/hooks.md
 precmd() {
-  title "zsh" "%m" "%55<...<%~"
+  # title "zsh" "%m" "%55<...<%~"
+  echo -ne "\e]1;${PWD##*/}\a"
   set_prompt
 }
+
+
