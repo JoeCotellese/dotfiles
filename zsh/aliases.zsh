@@ -16,3 +16,6 @@ if [[ $HOST == "Joes-Mac-mini-2.local" ]]
 alias download="cd $HOME/Downloads"
 
 alias ls='ls -l'
+
+alias dl='cd ~/Downloads'
+alias hdl='cd /Volumes/Home/Downloads'
