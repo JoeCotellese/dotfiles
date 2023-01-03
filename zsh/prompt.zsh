@@ -77,10 +77,12 @@ DISABLE_AUTO_TITLE="true"
 
 # You can use precmd to setup the prompt
 # Source: https://github.com/rothgar/mastering-zsh/blob/master/docs/config/hooks.md
-precmd() {
-  # title "zsh" "%m" "%55<...<%~"
-  echo -ne "\e]1;${PWD##*/}\a"
-  set_prompt
-}
+# TODO: Remove this if it's not needed since I've installed Starship
+# Link to Starship docs: https://starship.rs/guide/#zsh
+# precmd() {
+#   # title "zsh" "%m" "%55<...<%~"
+#   echo -ne "\e]1;${PWD}\a"
+#   set_prompt
+# }
 
 
