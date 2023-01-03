@@ -53,3 +53,5 @@ bindkey "^[[B" down-line-or-beginning-search # Down
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && . "$HOME/.fig/shell/zshrc.post.zsh"
+
+eval "$(starship init zsh)"
