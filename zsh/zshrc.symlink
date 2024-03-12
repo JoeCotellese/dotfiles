@@ -46,3 +46,7 @@ unset config_files
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && . "$HOME/.fig/shell/zshrc.post.zsh"
 
 eval "$(starship init zsh)"
+
+# direnv lets you load/unload environments based on the local directory
+
+eval "$(direnv hook zsh)"
