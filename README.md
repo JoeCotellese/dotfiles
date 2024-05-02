@@ -45,6 +45,11 @@ There's a few special files in the hierarchy.
   but still keep those autoloaded files in your home directory. These get
   symlinked in when you run `script/bootstrap`.
 
+### Managing API keys or other secrets
+
+Any file named secrets.zsh is ignored in the .gitignore file. I use it for API keys
+
+
 ## install
 
 Run this:
