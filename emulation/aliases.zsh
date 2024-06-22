@@ -3,5 +3,7 @@ function download_artwork() {
     wget https://mrdo.mameworld.info/artwork/$1.zip;
 }
 
-alias mame="cd /Volumes/External/MAME;mame"
-alias vice="cd /Volumes/External/VICE"
+EXTERNAL_DRIVE="/Volumes/External"
+alias mame="cd $EXTERNAL_DRIVE/MAME;mame"
+alias vice="cd $EXTERNAL_DRIVE/VICE"
+

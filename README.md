@@ -47,8 +47,7 @@ There's a few special files in the hierarchy.
 
 ### Managing API keys or other secrets
 
-Any file named secrets.zsh is ignored in the .gitignore file. I use it for API keys
-
+Use ~/.localrc for anything you want to keep out of git
 
 ## install
 
