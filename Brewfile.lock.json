@@ -437,7 +437,7 @@
         }
       },
       "obsidian": {
-        "version": "1.6.7",
+        "version": "1.7.4",
         "options": {
           "full_name": "obsidian",
           "args": {
@@ -557,6 +557,15 @@
         "version": "4.40.133",
         "options": {
           "full_name": "slack",
+          "args": {
+            "appdir": "/Applications"
+          }
+        }
+      },
+      "firefox": {
+        "version": "131.0.3",
+        "options": {
+          "full_name": "firefox",
           "args": {
             "appdir": "/Applications"
           }
